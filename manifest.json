@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Favorite message",
+    "description": "Adds favorite message recipient for vk.com",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*.vk.com/*",
+                "https://*.vk.com/*"
+            ],
+            "js": [
+                "core.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "http://*/",
+        "http://*/*",
+        "https://*/"
+    ]
+}

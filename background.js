@@ -10,6 +10,7 @@
             case 'vk_set_data':
                 localStorage['name'] = request.data.name
                 localStorage['link'] = request.data.link
+                sendResponse()
                 break
             case 'vk_get_data':
                 sendResponse(localStorage)
